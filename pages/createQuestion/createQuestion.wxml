@@ -1,0 +1,22 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}"><view slot="backText" isback></view><view slot="content">发布问卷</view></cu-custom>
+<van-steps
+  steps="{{ steps }}"
+  active="{{ active }}"
+/>
+
+<view class="container">
+    <view class="input mt50">
+      问卷名称：
+    </view>
+    <view class="input">
+      <input placeholder='请输入名称' bindinput='surveyName' value="{{paper.title}}"></input>
+    </view>
+    <view class="input mt40">
+      问卷描述：
+    </view>
+    <view class="input">
+      <textarea placeholder='请输入具体内容' bindinput='surveyCon' value="{{paper.des}}"></textarea>
+    </view>
+    <button class="btn" catchtap='tostep'>下一步</button>
+    
+</view>

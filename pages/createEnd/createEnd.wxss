@@ -1,0 +1,36 @@
+/* pages/createEnd/createEnd.wxss */
+#info{
+    background-color: lightblue;
+    padding:15px;
+    font-size: 35rpx;
+    text-indent: 35rpx;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+#release{
+    
+    padding-top: 30px;
+}
+
+.btn{
+    
+    width:80%;
+    height:40px;
+    background-color: rgb(18, 179, 18);
+    border-radius: 40px;
+    line-height:40px;
+    color:white;
+    margin:24rpx auto;
+    font-size:32rpx;
+  }
+
+  .container {
+    background-color: #eaf3fb;
+    color: #343434;
+    /* overflow: auto; */
+    font-size: 32rpx;
+    height:435px;
+  }

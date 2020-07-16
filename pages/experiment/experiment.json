@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "SearchInput":"../../components/SearchInput/SearchInput",
+    "Tabs":"../../components/Tabs/Tabs",
+    "bar": "../../components/bar/bar"
+  },
+  "navigationBarTitleText": "心理实验",
+  "enablePullDownRefresh":true,
+  "backgroundTextStyle":"dark"
+}

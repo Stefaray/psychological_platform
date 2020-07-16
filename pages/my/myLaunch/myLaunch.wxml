@@ -1,0 +1,75 @@
+
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}"><view slot="backText"></view><view slot="content">我发布的</view></cu-custom>
+
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+  <block wx:if="{{tabs[0].isActive}}">
+    <view class="first_tab">
+        <navigator class="goods_item"
+        wx:for="{{goodsList}}"
+        wx:key="_id"
+        url="/pages/Statistics/Statistics?ques_id={{item._id}}&page={{1}}"
+        >
+            <!-- 左侧 图片容器 -->
+            <view class="goods_img_wrap">
+              <image mode="widthFix" src="http://ray34.cn-sh2.ufileos.com/%E5%A4%A7%E5%A4%8F%E6%9D%AF%2Fquestionnaire.jpg"></image>
+            </view>
+            <!-- 右侧 商品容器 -->
+            <view class="goods_info_wrap">
+              <view class="goods_name">{{item.title}}</view>
+              <view class="goods_pricetime">
+              <view class="goods_price">￥{{item.reward}}</view>
+              <view class="goods_time">{{item.duration}} min</view>
+              </view>
+            </view>
+          </navigator>
+    </view>
+  </block>
+
+  <block wx:elif="{{tabs[1].isActive}}">
+  <view class="first_tab">
+        <navigator class="goods_item"
+        wx:for="{{goodsList_timeSort}}"
+        wx:key="_id"
+        url="/pages/goods_detail/index?_id={{item._id}}"
+        >
+            <!-- 左侧 图片容器 -->
+            <view class="goods_img_wrap">
+              <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}"></image>
+            </view>
+            <!-- 右侧 商品容器 -->
+            <view class="goods_info_wrap">
+              <view class="goods_name">{{item.goods_name}}</view>
+             <view class="goods_pricetime">
+              <view class="goods_price">￥{{item.goods_price}}</view>
+              <view class="goods_time">{{item.goods_price}} min</view>
+              </view>
+            </view>
+          </navigator>
+    </view>
+  </block>
+
+  <block wx:elif="{{tabs[2].isActive}}">
+  <view class="first_tab">
+        <navigator class="goods_item"
+        wx:for="{{goodsList_priceSort}}"
+        wx:key="goods_id"
+        url="/pages/goods_detail/index?goods_id={{item.goods_id}}"
+        >
+            <!-- 左侧 图片容器 -->
+            <view class="goods_img_wrap">
+              <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}"></image>
+            </view>
+            <!-- 右侧 商品容器 -->
+            <view class="goods_info_wrap">
+              <view class="goods_name">{{item.goods_name}}</view>
+              <view class="goods_pricetime">
+              <view class="goods_price">￥{{item.goods_price}}</view>
+              <view class="goods_time">{{item.goods_price}} min</view>
+              </view>
+            </view>
+          </navigator>
+    </view>
+  </block>
+  </Tabs>
+    <view class="bottom"></view>
+<bar PageCur="{{PageCur}}" bindtabsItemChange="handleTabsItemChange"></bar>

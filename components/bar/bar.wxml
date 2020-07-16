@@ -1,0 +1,38 @@
+<view class="cu-bar tabbar bg-white shadow foot">
+
+  <view class="action" bindtap="NavChange1" data-cur="questionnaire">
+    <view class='cuIcon-cu-image'>
+      <image src="/icons/questionnaire{{PageCur=='questionnaire'?'-o':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='questionnaire'?'text-red':'text-gray'}}">问卷</view>
+  </view>
+
+  <view class="action" bindtap="NavChange2" data-cur="experiment">
+    <view class='cuIcon-cu-image'>
+      <image src="/icons/experiment{{PageCur=='experiment'?'-o':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='experiment'?'text-red':'text-gray'}}">实验</view>
+  </view>
+
+  <view class="action" bindtap="NavChange3" data-cur="launch">
+    <view class="action {{PageCur=='launch'?'text-green':'text-gray'}} add-action">
+      <button class="cu-btn cuIcon-add bg-green shadow"></button>
+      发布
+    </view>
+  </view>
+
+  <view class="action" bindtap="NavChange4" data-cur="message">
+    <view class='cuIcon-cu-image'>
+      <image src="/icons/message{{PageCur=='message'?'-o':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='message'?'text-red':'text-gray'}}">消息</view>
+  </view>
+
+  <view class="action" bindtap="NavChange5" data-cur="my">
+    <view class='cuIcon-cu-image'>
+      <image src="/icons/my{{PageCur=='my'?'-o':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='my'?'text-red':'text-gray'}}">我的</view>
+  </view>
+
+</view>

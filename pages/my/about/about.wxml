@@ -1,0 +1,11 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}"><view slot="backText"></view><view slot="content">关于</view></cu-custom>
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>关于心理平台小程序</view>
+  <view class='text-content'>
+    <view>Hi！~欢迎使用心理平台小程序！</view>
+    <view class='margin-top-sm'>该项目是我个人开发的一款高颜值的心理平台小程序。这个项目不仅可以发布问卷，还可以发布实验。我们也会不定期更新一些小程序的解决方案，你有一些好的想法也可以给我们意见反馈，我会加入到扩展里。</view>
+    <view class='margin-top-sm'>如果这个项目有帮到你，或者你觉得很赞，可以打个五星好评哦</view>
+    <view class='margin-top-sm'>地点：华师大٩(๑❛ᴗ❛๑)۶</view>
+    <view class='margin-top-sm'>作者：18级软工黄逸宏、18级软工姚東序</view>
+  </view>
+</view>

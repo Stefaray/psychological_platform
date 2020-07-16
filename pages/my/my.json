@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "bar": "../../components/bar/bar",
+    "van-popup": "../../miniprogram_npm/vant-weapp/popup/index"
+  },
+  "navigationBarTitleText":"个人中心"
+  
+}

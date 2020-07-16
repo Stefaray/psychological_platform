@@ -1,0 +1,25 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+    <view slot="backText"  bindtap="endBtn"> 返回 </view>
+    <view slot="content">领取红包</view>
+</cu-custom>
+
+
+ <view class="cu-list menu sm-border card-menu margin-top">
+            
+            <view class="cu-item">
+              <view class="content">
+                	<view class="cu-form-group margin-top">
+
+                <view class="solids-bottom padding-xs flex align-center">
+            <!-- <view class="padding">22</view> -->
+            <view class="flex-sub text-center">
+              <view class="solid-bottom text-xxl padding">
+                <text class="text-price text-red">5.00</text>
+              </view>
+              <view class="padding">红包已发放到微信零钱，感谢您的参与</view>
+            </view>
+          </view>
+    </view>
+              </view>
+            </view>
+         </view>

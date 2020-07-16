@@ -1,0 +1,129 @@
+<scroll-view scroll-y class="scrollPage">
+  <image src='http://ray34.cn-sh2.ufileos.com/%E5%A4%A7%E5%A4%8F%E6%9D%AF%2FexperimentBg.png' mode='widthFix' class='png' style='width:100%;height:486rpx'></image>
+  
+  <!-- 实验任务开始 -->
+<view class="cu-list menu sm-border card-menu margin-top">
+    <view class="cu-item">
+      <view class="content medium">
+        <text class="cuIcon-circlefill text-green"></text>
+        <text class="text-green text-bold text-center text-shadow">实验任务</text>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-grey">{{content}}</text>
+      </view>
+    </view>
+	</view>
+<!-- 实验任务结束 -->
+
+<!-- 被试要求开始 -->
+<view class="cu-list menu sm-border card-menu margin-top">
+    <view class="cu-item">
+      <view class="content medium">
+        <text class="cuIcon-circlefill text-green"></text>
+        <text class="text-green text-bold text-center text-shadow">被试要求</text>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-grey">{{attention}}</text>
+      </view>
+    </view>
+	</view>
+<!-- 被试要求结束 -->
+
+
+<!-- 被试酬劳开始 -->
+<view class="cu-list menu sm-border card-menu margin-top">
+    <view class="cu-item">
+      <view class="content medium">
+        <text class="cuIcon-circlefill text-green"></text>
+        <text class="text-green text-bold text-center text-shadow">被试酬劳</text>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-grey">{{reward}}</text>
+      </view>
+    </view>
+	</view>
+<!-- 被试酬劳结束 -->
+
+
+
+<!-- 预计时长开始 -->
+<view class="cu-list menu sm-border card-menu margin-top">
+    <view class="cu-item">
+      <view class="content medium">
+        <text class="cuIcon-circlefill text-green"></text>
+        <text class="text-green text-bold text-center text-shadow">预计时长</text>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-grey">{{duration}}</text>
+      </view>
+    </view>
+	</view>
+<!-- 预计时长结束 -->
+
+<!-- 实验地点开始 -->
+<view class="cu-list menu sm-border card-menu margin-top">
+    <view class="cu-item">
+      <view class="content medium">
+        <text class="cuIcon-circlefill text-green"></text>
+        <text class="text-green text-bold text-center text-shadow">实验地点</text>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-grey">{{place}}</text>
+      </view>
+    </view>
+	</view>
+<!-- 实验地点结束 -->
+
+<!-- 实验时间开始 -->
+<view class="cu-list menu sm-border card-menu margin-top">
+    <view class="cu-item">
+      <view class="content medium">
+        <text class="cuIcon-circlefill text-green"></text>
+        <text class="text-green text-bold text-center text-shadow">实验时间</text>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-grey">{{task_time}}</text>
+      </view>
+    </view>
+	</view>
+<!-- 实验时间结束 -->
+
+<!-- 联系主试开始 -->
+<view class="cu-list menu sm-border card-menu margin-top">
+    <view class="cu-item">
+      <view class="content medium">
+        <text class="cuIcon-circlefill text-green"></text>
+        <text class="text-green text-bold text-center text-shadow">联系主试</text>
+      </view>
+    </view>
+    <view class="cu-item">
+      
+        <image src="http://ray34.cn-sh2.ufileos.com/%E5%A4%A7%E5%A4%8F%E6%9D%AF%2FQRcode.png" class="qrCode" mode="widthFix"></image>
+      
+    </view>
+	</view>
+<!-- 联系主试结束 -->
+
+<view class="require_button">
+
+  <button class="require_start" bindtap="nextPage" type="primary"><text>加入收藏</text></button> 
+  <button class="require_back" bindtap="indexNavigator" type="primary"><text>返回</text></button>
+</view>
+
+</scroll-view>
+<toast hidden="{{toastHidden}}" duration="1000" bindchange="onToastChanged">    
+        添加成功 
+</toast>   
+

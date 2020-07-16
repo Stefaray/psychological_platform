@@ -1,0 +1,180 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}"><view slot="backText"></view><view slot="content">历史记录</view></cu-custom>
+<view class="cu-timeline">
+
+          <view class="goods_item cu-timeline"
+                  wx:for="{{goodsList}}"
+                  wx:key="_id"
+                  >
+           
+ <view class="cu-item text-pink">
+    <view class="bg-gradual-pink content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-pink">{{item.date}}</view>
+      </view>
+      <view class="margin-top-sm text-content">
+      <view class="first_tab">
+        <view class="goods_item"
+       
+        >
+           <!-- 左侧 图片容器 -->
+            <view class="goods_img_wrap">
+              <image mode="widthFix" src="{{!item.Type?'http://ray34.cn-sh2.ufileos.com/%E5%A4%A7%E5%A4%8F%E6%9D%AF%2Fquestionnaire.jpg':'http://ray34.cn-sh2.ufileos.com/%E5%A4%A7%E5%A4%8F%E6%9D%AF%2Fexperiment.jpg'}}"></image>
+            </view>
+            <!-- 右侧 商品容器 -->
+            <view class="goods_info_wrap">
+              <view class="goods_name">{{item.title}}</view>
+             <view class="goods_pricetime  margin-top-sm text-content">
+              <view class="goods_price"></view>
+              <view class="goods_time">￥{{item.reward}}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>   
+  </view>
+
+
+          </view>
+
+
+
+
+
+  <view class="cu-item text-pink">
+    <view class="bg-gradual-pink content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-pink">2019/05/08</view>
+      </view>
+      <view class="margin-top-sm text-content">
+      <view class="first_tab">
+        <view class="goods_item"
+        url="/pages/goods_detail/index?goods_id={{item.goods_id}}"
+        >
+            <!-- 左侧 图片容器 -->
+            <view class="goods_img_wrap">
+              <image mode="widthFix" src="http://ray34.cn-sh2.ufileos.com/%E5%A4%A7%E5%A4%8F%E6%9D%AF/questionnaire.jpg"></image>
+            </view>
+            <!-- 右侧 商品容器 -->
+            <view class="goods_info_wrap">
+              <view class="goods_name">职业价值观的代际差异研究</view>
+              <view class="goods_pricetime margin-top-sm text-content">
+              <view class="goods_price"></view>
+              <view class="goods_time">￥4</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>   
+  </view>
+  <view class="cu-item text-pink">
+    <view class="bg-gradual-pink content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-pink">2019/05/06</view>
+      </view>
+      <view class="margin-top-sm text-content">
+      <view class="first_tab">
+        <view class="goods_item"
+        url="/pages/goods_detail/index?goods_id={{item.goods_id}}"
+        >
+            <!-- 左侧 图片容器 -->
+            <view class="goods_img_wrap">
+              <image mode="widthFix" src="http://ray34.cn-sh2.ufileos.com/%E5%A4%A7%E5%A4%8F%E6%9D%AF/questionnaire.jpg"></image>
+            </view>
+            <!-- 右侧 商品容器 -->
+            <view class="goods_info_wrap">
+              <view class="goods_name">职业价值观的代际差异研究</view>
+              <view class="goods_pricetime margin-top-sm text-content">
+              <view class="goods_price"></view>
+              <view class="goods_time">￥4</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>   
+  </view>
+  <view class="cu-item text-pink">
+    <view class="bg-gradual-pink content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-pink">2019/05/05</view>
+      </view>
+      <view class="margin-top-sm text-content">
+      <view class="first_tab">
+        <view class="goods_item"
+        url="/pages/goods_detail/index?goods_id={{item.goods_id}}"
+        >
+            <!-- 左侧 图片容器 -->
+            <view class="goods_img_wrap">
+              <image mode="widthFix" src="http://ray34.cn-sh2.ufileos.com/%E5%A4%A7%E5%A4%8F%E6%9D%AF/questionnaire.jpg"></image>
+            </view>
+            <!-- 右侧 商品容器 -->
+            <view class="goods_info_wrap">
+              <view class="goods_name">职业价值观的代际差异研究</view>
+              <view class="goods_pricetime margin-top-sm text-content">
+              <view class="goods_price"></view>
+              <view class="goods_time">￥4</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>   
+  </view>
+  <view class="cu-item text-pink">
+    <view class="bg-gradual-pink content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-pink">2019/05/04</view>
+      </view>
+      <view class="margin-top-sm text-content">
+      <view class="first_tab">
+        <view class="goods_item"
+        url="/pages/goods_detail/index?goods_id={{item.goods_id}}"
+        >
+            <!-- 左侧 图片容器 -->
+            <view class="goods_img_wrap">
+              <image mode="widthFix" src="http://ray34.cn-sh2.ufileos.com/%E5%A4%A7%E5%A4%8F%E6%9D%AF/questionnaire.jpg"></image>
+            </view>
+            <!-- 右侧 商品容器 -->
+            <view class="goods_info_wrap">
+              <view class="goods_name">职业价值观的代际差异研究</view>
+              <view class="goods_pricetime margin-top-sm text-content">
+              <view class="goods_price"></view>
+              <view class="goods_time">￥4</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>   
+  </view>
+  <view class="cu-item text-pink">
+    <view class="bg-gradual-pink content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-pink">2019/05/03</view>
+      </view>
+      <view class="margin-top-sm text-content">
+      <view class="first_tab">
+        <view class="goods_item"
+        url="/pages/goods_detail/index?goods_id={{item.goods_id}}"
+        >
+            <!-- 左侧 图片容器 -->
+            <view class="goods_img_wrap">
+              <image mode="widthFix" src="http://ray34.cn-sh2.ufileos.com/%E5%A4%A7%E5%A4%8F%E6%9D%AF/questionnaire.jpg"></image>
+            </view>
+            <!-- 右侧 商品容器 -->
+            <view class="goods_info_wrap">
+              <view class="goods_name">职业价值观的代际差异研究</view>
+              <view class="goods_pricetime margin-top-sm text-content">
+              <view class="goods_price"></view>
+              <view class="goods_time">￥4</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>   
+  </view>
+  
+</view>

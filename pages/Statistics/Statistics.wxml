@@ -1,0 +1,59 @@
+<!--pages/Statistics/Statistics.wxml-->
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}"><view slot="backText"></view><view slot="content">数据统计</view></cu-custom>
+
+<van-collapse value="{{ activeNames }}" bind:change="onChange">
+  <van-collapse-item title="{{question.title}}" name="1" >
+    描述：  {{question.des}}
+    <view class='button-area'>
+        <block wx:for="{{pageIndexArray}}">
+            <button class='small_button' data-i="{{item}}" bindtap="gotoPage"
+            style="width: {{cssWidth}}rpx">{{item}}</button>
+        </block>
+         <button class="daochu" bindtap="daochu">导出csv</button>
+    </view>
+   
+  </van-collapse-item>
+    
+</van-collapse>
+
+<view class="container" hover-class="none" hover-stop-propagation="false">
+
+        {{page_i}}.<text class="Title" >
+            {{showProblem.text}}
+        </text>
+        
+       
+        <view wx:if="{{showProblem.type!=2}}" class="sub1">
+             
+           <view class="chart-container">
+                <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+            </view>
+           <!-- <van-button type="info" size="small" id="toggleChart" bindtap="toggleChart">切换图表</van-button> -->
+        </view>
+        
+        
+            <block wx:for="{{showProblem.options}}">
+                <view>
+                    选项{{index+1}} : {{item.text}}
+
+                </view>
+            </block>
+        
+        
+        <view wx:if="{{showProblem.type==2}}" class="sub1">
+            <block wx:for="{{showProblem.answers}}" wx:for-item="answer" wx:for-index="i">
+                
+                <view>
+                    回答{{i+1}} : {{answer}}
+
+                </view>
+                
+                
+            </block>
+        </view>
+        
+    
+
+
+</view>
+

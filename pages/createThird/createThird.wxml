@@ -1,0 +1,28 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}"><view slot="backText"></view><view slot="content">发布问卷</view></cu-custom>
+<van-steps
+  steps="{{ steps }}"
+  active="{{ active }}"
+/>
+
+<view class='container'>
+    <view id='require-info'>
+
+        请填写对答卷人的限制要求，示例：1.18岁以上 2. 本科以上学历 3.请在安静环境下作答
+
+    </view>
+    
+<view >
+    
+   <view class="input">
+      <textarea placeholder='请输入具体内容' bindinput="require_get"></textarea>
+    </view>
+</view>
+
+
+
+    <view>
+  
+    <button class="btn" catchtap='publish'>下一步</button>
+  
+  </view>
+</view>

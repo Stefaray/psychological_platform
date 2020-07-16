@@ -1,0 +1,54 @@
+{
+  "pages": [
+    
+    "pages/createQuestion/createQuestion",
+    "pages/createSub/createSub",
+    "pages/radio/radio",
+    "pages/createThird/createThird",
+    "pages/createEnd/createEnd",
+    "pages/goods_list/index",
+    "pages/create_experiment/create_experiment",
+    "pages/my/about/about",
+    "pages/my/advice/advice",
+    "pages/my/vote/vote",
+    "pages/my/myLaunch/myLaunch",
+    "pages/my/history/history",
+    "pages/que_finish/que_finish",
+    "pages/money/index",
+    "pages/experiment_detail/index",
+    "pages/test/test",
+    "pages/questionnaire/questionnaire",
+    "pages/feedback/index",
+    "pages/login/index",
+    "pages/search/index",
+    "pages/goods_detail/index",
+    "pages/experiment/experiment",
+    "pages/launch/launch",
+    "pages/message/message",
+    "pages/index/index",
+    "pages/my/my"
+  ],
+
+    "usingComponents": {
+      "cu-custom": "/components/template/colorui/components/cu-custom",
+      "van-uploader": "miniprogram_npm/vant-weapp/uploader/index",
+      "van-popup":  "miniprogram_npm/vant-weapp/popup/index",
+      "van-switch": "miniprogram_npm/vant-weapp/switch/index",
+      "van-button": "miniprogram_npm/vant-weapp/button/index",
+      "van-icon":   "miniprogram_npm/vant-weapp/icon/index",
+      "van-steps":  "miniprogram_npm/vant-weapp/steps/index",
+      "van-panel":  "miniprogram_npm/vant-weapp/panel/index",
+      "van-field":  "miniprogram_npm/vant-weapp/field/index"
+      
+        
+    },
+  "window": {
+    "navigationStyle": "custom" ,
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#eb4450",
+    "navigationBarTitleText": "心理平台",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+  
+}

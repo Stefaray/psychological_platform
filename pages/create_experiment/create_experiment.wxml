@@ -1,0 +1,135 @@
+
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}"><view slot="backText" ></view><view slot="content">发布实验</view></cu-custom>
+
+ <!-- 实验标题开始 -->
+<view class="cu-list menu sm-border card-menu margin-top">
+    <view class="cu-item">
+      <view class="content medium">
+        <text class="cuIcon-circlefill text-green"></text>
+        <text class="text-green text-bold text-center text-shadow">实验标题</text>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+         <input disabled="{{modalName!=null}}" bindinput="experiment_title" placeholder="请输入..." />
+      </view>
+    </view>
+	</view>
+<!-- 实验标题结束 -->
+
+
+ <!-- 实验任务开始 -->
+<view class="cu-list menu sm-border card-menu margin-top">
+    <view class="cu-item">
+      <view class="content medium">
+        <text class="cuIcon-circlefill text-green"></text>
+        <text class="text-green text-bold text-center text-shadow">实验内容</text>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+         <textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="experiment_content" placeholder="请输入..."></textarea>
+      </view>
+    </view>
+	</view>
+<!-- 实验任务结束 -->
+
+<!-- 被试要求开始 -->
+<view class="cu-list menu sm-border card-menu margin-top">
+    <view class="cu-item">
+      <view class="content medium">
+        <text class="cuIcon-circlefill text-green"></text>
+        <text class="text-green text-bold text-center text-shadow">被试要求</text>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+        <textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="experiment_attention" placeholder="请输入..."></textarea>
+      </view>
+    </view>
+	</view>
+<!-- 被试要求结束 -->
+
+
+<!-- 被试酬劳开始 -->
+<view class="cu-list menu sm-border card-menu margin-top">
+    <view class="cu-item">
+      <view class="content medium">
+        <text class="cuIcon-circlefill text-green"></text>
+        <text class="text-green text-bold text-center text-shadow">被试酬劳</text>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+        <textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="experiment_reward" placeholder="请输入..."></textarea>
+      </view>
+    </view>
+	</view>
+<!-- 被试酬劳结束 -->
+
+
+
+<!-- 预计时长开始 -->
+<view class="cu-list menu sm-border card-menu margin-top">
+    <view class="cu-item">
+      <view class="content medium">
+        <text class="cuIcon-circlefill text-green"></text>
+        <text class="text-green text-bold text-center text-shadow">预计时长</text>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+        <textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="experiment_duration" placeholder="请输入..."></textarea>
+      </view>
+    </view>
+	</view>
+<!-- 预计时长结束 -->
+
+<!-- 实验地点开始 -->
+<view class="cu-list menu sm-border card-menu margin-top">
+    <view class="cu-item">
+      <view class="content medium">
+        <text class="cuIcon-circlefill text-green"></text>
+        <text class="text-green text-bold text-center text-shadow">实验地点</text>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+       <textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="experiment_place" placeholder="请输入..."></textarea>
+      </view>
+    </view>
+	</view>
+<!-- 实验地点结束 -->
+
+<!-- 实验时间开始 -->
+<view class="cu-list menu sm-border card-menu margin-top">
+    <view class="cu-item">
+      <view class="content medium">
+        <text class="cuIcon-circlefill text-green"></text>
+        <text class="text-green text-bold text-center text-shadow">实验时间</text>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+        <textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="experiment_task_time" placeholder="请输入..."></textarea>
+      </view>
+    </view>
+	</view>
+<!-- 实验时间结束 -->
+
+<!-- 联系主试开始 -->
+<view class="cu-list menu sm-border card-menu margin-top">
+    <view class="cu-item">
+      <view class="content medium">
+        <text class="cuIcon-circlefill text-green"></text>
+        <text class="text-green text-bold text-center text-shadow">联系方式</text>
+      </view>
+    </view>
+    <view class="cu-item">
+      
+   <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
+      
+    </view>
+	</view>
+<!-- 联系主试结束 -->
+ <button class="btn" catchtap='submit'>提交</button>

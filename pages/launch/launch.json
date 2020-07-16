@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "bar": "../../components/bar/bar"
+  },
+  "component": true,
+  "navigationBarTitleText": "发布",
+  "enablePullDownRefresh":true,
+  "backgroundTextStyle":"dark"
+}

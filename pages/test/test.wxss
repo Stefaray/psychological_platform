@@ -1,0 +1,25 @@
+.value-class {
+  flex: none !important;
+}
+
+
+
+
+.blank{
+  background-color: skyblue;
+}
+page{
+  background-color: var(--ghostWhite);
+}
+.medium{
+  text-align: center;
+}
+
+
+
+
+
+.bgc{
+  background-image: url(https://image.weilanwl.com/color2.0/cardBg.png);
+  background-color: aqua;
+}

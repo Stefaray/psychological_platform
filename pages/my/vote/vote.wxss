@@ -1,0 +1,5 @@
+/* pages/my/vote/vote.wxss */
+/* pages/que_finish/que_finish.wxss */
+page{
+  background-color: var(--ghostWhite);
+}

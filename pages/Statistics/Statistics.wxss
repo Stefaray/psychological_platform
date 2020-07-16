@@ -1,0 +1,72 @@
+.chart-container{
+    /* position: absolute;
+    top: 110rpx;
+    bottom: 110rpx;
+    left: 110rpx;
+    right: 110rpx; */
+
+    width: 500rpx;
+    height: 500rpx;
+/*   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box; */
+}
+
+.sub1{
+    text-indent: 25rpx;
+}
+.Title{
+    font-size: large;
+    font-weight: bolder;
+}
+
+/* .chartFather{
+    position: relative;
+} */
+
+.container{
+    width: 800rpx;
+    padding-left: 50rpx;
+    min-height: 500rpx;
+    font-size: medium;
+}
+
+
+.small_button{
+    display: inline-block;
+    width: 60rpx;
+    height: 75rpx;
+    text-shadow: 0 1px 0 rgba(0,0,0,.2);
+    margin: 10rpx;
+    font-size: small;
+    text-align: justify;
+    padding-left: 5px;
+    padding-bottom: 15px;
+    padding-top: 0;
+    border: 1px solid grey;
+}
+
+.button-area{
+    height: auto;
+}
+
+#toggleChart{
+    float:right;
+    justify-content: right;
+    padding-right: 30rpx;
+   
+}
+
+.daochu{
+    display: inline-block;
+    color:blue;
+    border: 0px white;
+    background-color: white;
+    font-size: small;
+}
+page {
+    /* background-color: blue; */
+}

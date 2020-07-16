@@ -1,0 +1,44 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+    <view slot="backText"  bindtap="endBtn">  </view>
+    <view slot="content">赞赏评分</view>
+</cu-custom>
+
+
+ <view class="cu-list menu sm-border card-menu margin-top">
+            
+            <view class="cu-item">
+              <view class="content">
+                	<view class="cu-form-group margin-top">
+
+                <view class="solids-bottom padding-xs flex align-center">
+            <!-- <view class="padding">22</view> -->
+            <view class="flex-sub text-center">
+
+
+        <view class="solids-bottom padding-xs flex align-center">
+            <view class="padding"></view>
+            <view class="flex-sub text-center">
+              <view class="solid-bottom text-xl padding">
+                <text class="text-black text-bold">请为我们的产品打分！</text>
+              </view>
+              <view class="padding">
+              <van-rate value="{{ value }}" icon="like" void-icon="like-o" bind:change="onChange"/>
+              </view>
+            </view>
+          </view>
+
+
+            </view>
+          </view>
+    </view>
+              </view>
+            </view>
+         </view>
+
+  <view class="padding flex flex-direction">
+    <button class="cu-btn bg-blue lg"  bindtap="nextPage">提交</button>
+  </view>
+
+<toast hidden="{{toastHidden}}" duration="3000" >    
+        感谢您的参与 
+</toast>

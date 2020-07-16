@@ -1,0 +1,53 @@
+/* pages/createThird/createThird.wxss */
+#require-info{
+    background-color: lightblue;
+    padding:15px;
+    font-size: 35rpx;
+    text-indent: 35rpx;
+
+}
+
+.btn{
+    width:80%;
+    height:40px;
+    background-color: #58a6f6;
+    border-radius: 40px;
+    line-height:40px;
+    color:white;
+    margin:24rpx auto;
+    font-size:32rpx;
+  }
+
+  .section{
+    background-color: white;
+    font-size: 28rpx;
+    margin: 10%;
+   
+    width: 80%;
+    height: 100px;
+
+  }
+  .container {
+    background-color: #eaf3fb;
+    color: #343434;
+    /* overflow: auto; */
+    font-size: 32rpx;
+    height:435px;
+  }
+
+  .input {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  textarea {
+    flex: 1;
+    border: 1rpx solid #dadada;
+    background-color: white;
+    font-size: 30rpx;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }

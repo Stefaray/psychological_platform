@@ -1,0 +1,7 @@
+/* pages/csvContent/csvContent.wxss */
+page {
+  /* padding-bottom: 90rpx; */
+  
+  background-color: var(--ghostWhite);
+  
+}

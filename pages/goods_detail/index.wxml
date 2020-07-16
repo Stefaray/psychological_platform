@@ -1,0 +1,29 @@
+<scroll-view scroll-y class="scrollPage">
+  <image src='http://ray34.cn-sh2.ufileos.com/%E5%A4%A7%E5%A4%8F%E6%9D%AF%2FquestionnaireBg.png' mode='widthFix' class='png' style='width:100%;height:486rpx'></image>
+  
+
+  <view class='nav-list'>
+    <navigator open-type="navigate" hover-class='none' url="/pages/basics/{{item.name}}/{{item.name}}" class="nav-li bg-{{item.color}}" wx:for="{{elements}}" wx:key>
+      <view class="nav-title">{{item.title}}</view>
+      <view class="nav-name">{{des}}</view>
+      <text class='cuIcon-{{item.icon}}'></text>
+    </navigator>
+  </view>
+<view class="solids-bottom padding-xs flex align-center"></view>
+<view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-xl padding">
+        <text class="text-green text-bold text-center text-shadow">如果您符合要求，就开始做问卷吧。</text>
+      </view>
+    </view>
+  </view>
+
+<view class="require_button">
+  <button class="require_start" bindtap="nextPage" type="primary"><text>开始</text></button> 
+  <button class="require_back" bindtap="indexNavigator" type="primary"><text>返回</text></button>
+</view>
+
+
+</scroll-view>
+
+

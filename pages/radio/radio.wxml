@@ -1,0 +1,39 @@
+<!--pages/radio/radio.wxml-->
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}"><view slot="backText" ></view><view slot="content">发布问卷</view></cu-custom>
+<view class="container">
+  <view class="question">
+    <view class="questionB">
+      <view class="input">
+        <input placeholder='请输入问题' bindblur='title' value="{{}}"></input>
+      </view>
+    </view>
+    <view class="questionB" wx:if="{{type<2}}">
+      <view class="input" 
+      wx:for="{{answerslist}}" 
+      wx:key="{{index}}"
+      data-index="{{index}}"
+      catchlongtap='remove' >
+        <text>选项{{index+1}}:</text>
+        <input placeholder='请输入选项内容,长按删除' 
+        data-index="{{index}}" 
+        bindblur='addAnswer' 
+        value='{{item}}'></input>
+      
+     
+      </view>
+      <view class="input add" catchtap='addOptions'>
+        <icon class="iconfont icon-msnui-add-line"></icon>
+        <text>添加选项</text>
+      </view>
+    </view>
+    <view class="questionB">
+      
+      <view class="input">
+        <text>此题目必须答</text>
+        <switch checked="{{true}}" bindchange="changeIsmust"/>
+      </view>
+    </view>
+  </view>
+  <button class="btn" catchtap='submit'>提交</button>
+   
+</view>

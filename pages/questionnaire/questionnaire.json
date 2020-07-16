@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "SearchInput":"../../components/SearchInput/SearchInput",
+    "Tabs":"../../components/Tabs/Tabs",
+    "bar": "../../components/bar/bar"
+  },
+  
+  "navigationBarTitleText": "问卷广场",
+  "enablePullDownRefresh":true,
+  "backgroundTextStyle":"dark"
+}

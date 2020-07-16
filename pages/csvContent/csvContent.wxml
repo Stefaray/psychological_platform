@@ -1,0 +1,20 @@
+
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}"><view slot="backText"></view><view slot="content">导出数据</view></cu-custom>
+
+
+
+   <view class="cu-list menu sm-border card-menu margin-top">
+    <view class="cu-item">
+      <view class="content medium">
+        <text class="cuIcon-circlefill text-green"></text>
+        <text class="text-green text-bold text-center text-shadow">{{buffer[0]}}</text>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-grey">{{buffer[1]}}</text>
+      </view>
+    </view>
+	</view>
+
+

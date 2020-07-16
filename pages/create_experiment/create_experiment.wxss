@@ -1,0 +1,17 @@
+/* pages/create_experiment/create_experiment.wxss */
+page{
+  background-color: var(--ghostWhite);
+}
+.btn {
+  width:80%;
+  height:40px;
+  background-color: #58a6f6;
+  border-radius: 40px;
+  line-height:40px;
+  color:white;
+  margin:24rpx auto;
+  font-size:32rpx;
+}
+.medium{
+  text-align: center;
+}

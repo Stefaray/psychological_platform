@@ -1,0 +1,63 @@
+/* pages/createSub/createSub.wxss */
+page {
+  background-color: #eaf3fb;
+}
+.container {
+  padding:0 20rpx;
+  background-color: #eaf3fb;
+  color:#343434;
+  overflow: auto;
+} 
+.title {
+  text-align: center;
+  font-size:48rpx;
+
+  padding:30rpx 10rpx 20rpx;
+}
+
+.des{
+  font-size: 36rpx;
+
+  padding: 10rpx;
+}
+.option{
+  color:green
+}
+
+.question{
+  font-size: 35rpx;
+  border-top: 1px dashed blanchedalmond;
+  border-bottom: 1px dashed blanchedalmond;
+  position: relative;
+  min-height: 100rpx;
+  margin: 15px;
+  
+}
+
+
+.isMust{
+  color:red;
+  font-size: 35rpx;
+}
+.option-detail{
+  text-indent: 40rpx;
+
+  text-align: left;
+}
+
+.btn{
+  width:80%;
+  height:40px;
+  background-color: #58a6f6;
+  border-radius: 40px;
+  line-height:40px;
+  color:white;
+  margin:24rpx auto;
+  font-size:32rpx;
+}
+
+.remove{
+  position: absolute;
+  right:0;
+  top:0;
+}

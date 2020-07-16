@@ -1,0 +1,42 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}"><view slot="backText"></view><view slot="content">发布问卷</view></cu-custom>
+<van-steps
+  steps="{{ steps }}"
+  active="{{ active }}"
+/>
+
+<view class='container'>
+    <view id='info'>
+
+        请填写问卷的奖励总额以及所需的答卷人数，每一位完成答卷的人会从中获取一部分红包
+
+    </view>
+
+    <van-cell-group>
+    
+  <van-field
+    required
+    clearable
+    label="奖励"
+    icon="gold-coin-o"
+    placeholder="请输入奖励，最低为0"
+    bindblur="reward_get"
+  />
+  <van-field
+    required
+    clearable
+    label="时长"
+    icon="clock-o"
+    placeholder="请输入时长，最低为10"
+    bindblur="clock_get"
+  />
+</van-cell-group>
+
+
+<view id='release'>
+  
+    <button class="btn" catchtap='publish'>发布</button>
+  
+  </view>
+
+
+</view>

@@ -1,0 +1,144 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="true" >
+    
+      <view slot="content">问卷调查</view>
+</cu-custom>
+
+
+
+<!--pages/questionnaire/questionnaire.wxml-->
+<view class="pyg_index">
+
+
+
+	<!-- <view class="title">{{questionTitle}}</view> -->
+  <view class="solids-bottom padding-xs flex align-center">
+    <view class="flex-sub text-center">
+      <view class="solid-bottom text-xxl padding">
+        <text class="text-mauve text-bold">{{title}}</text>
+      </view>
+    </view>
+  </view>
+
+
+<!-- 实验任务开始 -->
+<view class="cu-list menu sm-border card-menu margin-top bgc">
+    <view class="cu-item">
+      <view class="content medium">
+        <text class="cuIcon-circlefill text-grey"></text>
+        <text class="text-grey text-bold text-center text-shadow">实验任务</text>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-grey">{{des}}</text>
+      </view>
+    </view>
+	</view>
+<!-- 实验任务结束 -->
+<!-- 注意事项开始 -->
+<view class="cu-list menu sm-border card-menu margin-top">
+		<view class="cu-item">
+      <view class="content medium">
+        <text class="cuIcon-circlefill text-grey"></text>
+        <text class="text-grey text-bold text-center text-shadow">注意事项</text>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-grey">{{attention}}</text>
+      </view>
+    </view>
+</view>
+<!-- 注意事项结束 -->
+
+  <block>
+    <view class="first_tab" wx:for="{{questions}}" 
+        wx:key="question">
+        <view class="goods_item"
+				wx:if="{{item.type==0}}"	
+        >
+
+
+        <view class="cu-list menu sm-border card-menu margin-top">
+            <view class="cu-item">
+              <view class="content">
+                <text class="text-grey">{{index+1}}. </text>
+                <text class="text-grey text-bold text-center text-shadow">{{item.text}}</text>
+              </view>
+            </view>
+            <view class="cu-item">
+              <view class="content">
+
+                <radio-group class="block" bindchange="radioChange" data-index="{{index}}">	
+                    <view class="cu-form-group" wx:for="{{item.options}}" wx:for-item="i">
+                      <view class="title">{{i}}</view>
+                      <radio class="radio blue" value="{{i}}"></radio>
+                    </view>
+                </radio-group>
+                
+              </view>
+            </view>
+        </view>
+
+            <!-- <radio-group bindchange="radioChange" data-index="{{index}}">
+									<label class="checkbox" wx:for="{{item.answer}}" wx:for-item="i">
+										<radio class="ws-checkbox" value="{{i}}" checked="{{checked}}"/>{{i}}
+									</label>
+						</radio-group>  -->
+        </view>
+
+				<view class="goods_item"
+				wx:if="{{item.type==1}}"	
+        >
+        <view class="cu-list menu sm-border card-menu margin-top">
+            <view class="cu-item">
+              <view class="content">
+                <text class="text-grey">{{index+1}}. </text>
+                <text class="text-grey text-bold text-center text-shadow">{{item.text}}</text>
+              </view>
+            </view>
+            <view class="cu-item">
+              <view class="content">
+                <checkbox-group bindchange="checkboxChange" data-index="{{index}}">
+                  <view class="cu-form-group" wx:for="{{item.options}}" wx:for-item="i">
+                    <view class="title">{{i}} </view>
+                    <checkbox class="round blue" value="{{i}}" ></checkbox>
+                  </view>
+                </checkbox-group> 
+              </view>
+            </view>
+         </view>
+        </view>
+				<view class="goods_item"
+				wx:if="{{item.type==2}}"	
+        >
+        <view class="cu-list menu sm-border card-menu margin-top">
+            <view class="cu-item">
+              <view class="content">
+                <text class="text-grey">{{index+1}}. </text>
+                <text class="text-grey text-bold text-center text-shadow">{{item.text}}</text>
+              </view>
+            </view>
+            <view class="cu-item">
+              <view class="content">
+                	<view class="cu-form-group margin-top">
+                    <textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaAInput" data-index="{{index}}" placeholder="请输入..."></textarea>
+                  </view>
+              </view>
+            </view>
+         </view>
+        </view>
+    </view>
+  </block>
+
+  <view class="padding flex flex-direction">
+    <button class="cu-btn bg-blue lg"  bindtap="nextPage">提交</button>
+  </view>
+
+</view>
+<toast hidden="{{toastHidden}}" duration="2000" bindchange="onToastChanged">    
+        提交成功 
+</toast>
+
+
+			

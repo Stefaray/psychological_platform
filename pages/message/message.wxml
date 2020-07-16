@@ -1,0 +1,53 @@
+<cu-custom bgColor="bg-gradual-pink" >
+	
+	<view slot="content">完成情况</view>
+</cu-custom>
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+  <block wx:if="{{tabs[0].isActive}}">
+  <!-- <view class="first_tab">
+        <view class="goods_item"
+        wx:for="{{goodsList}}"
+        wx:key="_id"
+        >
+           
+            <view class="goods_img_wrap">
+              <image mode="widthFix" src="{{!item.Type?'http://ray34.cn-sh2.ufileos.com/%E5%A4%A7%E5%A4%8F%E6%9D%AF%2Fquestionnaire.jpg':'http://ray34.cn-sh2.ufileos.com/%E5%A4%A7%E5%A4%8F%E6%9D%AF%2Fexperiment.jpg'}}"></image>
+            </view>
+          
+            <view class="goods_info_wrap">
+              <view class="goods_name">{{item.title}}</view>
+             <view class="goods_pricetime  margin-top-sm text-content">
+              <view class="goods_price"></view>
+              <view class="goods_time">{{item.reward}} min</view>
+              </view>
+            </view>
+          </view>
+    </view> -->
+  </block>
+
+  <block wx:elif="{{tabs[1].isActive}}">
+  <view class="first_tab">
+        <view class="goods_item"
+        wx:for="{{goodsList}}"
+        wx:key="_id"
+        >
+            <!-- 左侧 图片容器 -->
+            <view class="goods_img_wrap">
+              <image mode="widthFix" src="{{!item.Type?'http://ray34.cn-sh2.ufileos.com/%E5%A4%A7%E5%A4%8F%E6%9D%AF%2Fquestionnaire.jpg':'http://ray34.cn-sh2.ufileos.com/%E5%A4%A7%E5%A4%8F%E6%9D%AF%2Fexperiment.jpg'}}"></image>
+            </view>
+            <!-- 右侧 商品容器 -->
+            <view class="goods_info_wrap">
+              <view class="goods_name">{{item.title}}</view>
+             <view class="goods_pricetime  margin-top-sm text-content">
+              <view class="goods_price"></view>
+              <view class="goods_time">{{item.reward}} min</view>
+              </view>
+            </view>
+          </view>
+    </view>
+  </block>
+
+ 
+  </Tabs>
+  <view class="bottom"></view>
+<bar PageCur="{{PageCur}}" bindtabsItemChange="handleTabsItemChange"></bar>

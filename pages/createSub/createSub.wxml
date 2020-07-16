@@ -1,0 +1,70 @@
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}"><view slot="backText"></view><view slot="content">发布问卷</view></cu-custom>
+<van-steps
+  steps="{{ steps }}"
+  active="{{ active }}"
+/>
+
+
+<view class='container'>
+  
+
+
+  <van-panel title="{{title}}" desc="{{des}}" >
+
+  
+
+
+
+
+  
+</van-panel>
+
+<view wx:for="{{questions}}" class='question'>
+    <view>
+    <text wx:if="{{item.isMust}}" class='isMust'>*</text>
+      {{index+1}} . {{item.text}} [{{item.type}}]
+    </view>
+    <view wx:if="{{item.type!=='填空'}}">
+      <block wx:for="{{item.options}}">
+          <view class='option-detail'>
+         {{item}} 
+      </view>
+      
+      </block>
+    </view>
+    <br/>
+    <van-image width="35" height="35" class='remove' bindtap='remove' data-index='{{index}}'
+          src="cloud://cloud-5rowo.636c-cloud-5rowo-1301682541/icon/删除.png"/>
+  </view>
+
+  <view>
+    
+    <button bindtap='addProblem'>
+    <van-icon name="add-o" />
+    添加问题
+    </button>
+    
+  </view>
+
+<view id='options' hidden="{{show}}">
+  <view wx:for="{{options}}" wx:key="unique" >
+    <button class='option' bindtap="selectProblem" data-type="{{item.value}}">{{item.text}}</button>
+  </view>
+  <!-- <li> 
+    <button class='narrow'>a</button>
+     </li>
+  <li><button class='narrow'>a</button></li>
+  <li><button class='narrow'>a</button></li> -->
+</view>  
+  
+
+
+  <view>
+  
+    <button class="btn" catchtap='publish'>下一步</button>
+  
+  </view>
+
+
+
+</view>
